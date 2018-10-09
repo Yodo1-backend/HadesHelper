@@ -82,6 +82,7 @@ public class HadesClient {
         if(this.isAvailable() && Util.isStrValuable(this.moduleName,step_id,type_id,game_appkey,channel_code,version))
         {
             String msgStr = buildClientActionMessageBodyStr(step_id, type_id, target, advice_solver, extra, game_appkey, channel_code, version, region_code, channel_version);
+            pushMessage(msgStr);
         }
     }
     public void RecordActionStepError(String step_id, String type_id, String target, String advice_solver, String extra, Map<String,String> customInfoPair)
@@ -89,6 +90,7 @@ public class HadesClient {
         if(this.isAvailable() && Util.isStrValuable(this.moduleName,step_id,type_id))
         {
             String msgStr = buildCustomActionMessageBodyStr(step_id, type_id, target, advice_solver, extra, customInfoPair);
+            pushMessage(msgStr);
         }
     }
     public final boolean isAvailable() {

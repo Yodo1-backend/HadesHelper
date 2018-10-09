@@ -7,7 +7,7 @@
     <groupId>com.yodo1</groupId>
     <artifactId>hades-helper</artifactId>
     <packaging>jar</packaging>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <name>hades-helper</name>
     <description>Yodo1 Hades Helper</description>
 
