@@ -13,11 +13,7 @@ public class Util {
     {
        return System.getProperty("line.separator");
     }
-    public static final String LogSplit()
-    {
-        return "***";
-    }
-    public static final boolean isStrValuable(String... strs)
+    public static boolean isStrValuable(String... strs)
     {
         for (String str:strs) {
             if(null == str || str.isEmpty())
@@ -27,18 +23,8 @@ public class Util {
         }
         return true;
     }
-    public static String ByteBufferToString(ByteBuffer buffer) {
-        CharBuffer charBuffer = null;
-        try {
-            Charset charset = Charset.forName("UTF-8");
-            CharsetDecoder decoder = charset
-                    .newDecoder();
-            charBuffer = decoder.decode(buffer);
-            buffer.flip();
-            return charBuffer.toString();
-        } catch (Exception ex) {
-            ex.printStackTrace();
-            return null;
-        }
+    public static final Long GetCurrentTimeStamp()
+    {
+        return System.currentTimeMillis();
     }
 }
