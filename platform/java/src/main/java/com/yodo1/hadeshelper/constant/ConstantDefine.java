@@ -11,6 +11,7 @@ public class ConstantDefine {
     public static final String DEFAULT_TYPE_TIMEOUT = "timeout";
     public static final String DEFAULT_TYPE_ACCESS_DENIED = "accessDenied";
     public static final String DEFAULT_TYPE_INTERFACE_NOT_EXIST = "interfaceNotExist";
+    public static final String DEFAULT_TYPE_SIGN_INVALID = "signInvalid";
 
     public static final String DEFAULT_TYPE_INNER_PART_SERVICE_NOT_AVAILABLE = "innerPartServerNotAvailable";
     public static final String DEFAULT_TYPE_INNER_PART_SERVICE_ERROR = "innerPartServerError";
@@ -27,7 +28,7 @@ public class ConstantDefine {
     public static final String DEFAULT_ADVICE_SOLVER_BACKEND_DEV = "backend-dev";
     public static final String DEFAULT_ADVICE_SOLVER_IT_SUPPORT = "it";
     public static final String DEFAULT_ADVICE_SOLVER_GAME_DEV = "game-dev";
-    public static final String DEFAULT_ADVICE_SOLVER_BD = "ops";
+    public static final String DEFAULT_ADVICE_SOLVER_BD = "bd";
     public static final String DEFAULT_ADVICE_SOLVER_QA = "qa";
 
 
@@ -37,6 +38,7 @@ public class ConstantDefine {
         DEFAULT_TYPE_MAPPING.put(DEFAULT_TYPE_TIMEOUT, "连接超时");
         DEFAULT_TYPE_MAPPING.put(DEFAULT_TYPE_ACCESS_DENIED, "访问被拒绝");
         DEFAULT_TYPE_MAPPING.put(DEFAULT_TYPE_INTERFACE_NOT_EXIST, "接口不存在");
+        DEFAULT_TYPE_MAPPING.put(DEFAULT_TYPE_SIGN_INVALID, "签名错误");
 
         DEFAULT_TYPE_MAPPING.put(DEFAULT_TYPE_INNER_PART_SERVICE_NOT_AVAILABLE, "内部服务不可用");
         DEFAULT_TYPE_MAPPING.put(DEFAULT_TYPE_INNER_PART_SERVICE_ERROR, "内部服务错误");
